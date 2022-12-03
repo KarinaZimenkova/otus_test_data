@@ -35,5 +35,5 @@ with open(USERS_JSON, "r") as f:
             if i == 0:
                 break
 
-with open('reference.json', 'w') as outfile:
+with open('result.json', 'w') as outfile:
     json.dump(references, outfile, indent=1)
