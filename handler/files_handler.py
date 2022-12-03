@@ -35,4 +35,5 @@ with open(USERS_JSON, "r") as f:
             if i == 0:
                 break
 
-print(json.dumps(references, indent=4))
+with open('reference.json', 'w') as outfile:
+    json.dump(references, outfile, indent=1)
